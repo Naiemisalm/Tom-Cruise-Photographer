@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChackOut = () => {
     return (
-        <div>
+        <div className='container'>
             <h1>this is chs</h1>
         </div>
     );
