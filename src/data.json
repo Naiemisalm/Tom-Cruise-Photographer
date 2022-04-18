@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Weeding photography",
+        "price": 499,
+        "img": "https://d3btuubl2bvm9d.cloudfront.net/images/c88634e73b2511e3b6330e2f866a9102/1466172010005-web.jpg",
+        "description": "ddd"
+    },
+    {
+        "id": 2,
+        "name": "Weeding photography",
+        "price": 599,
+        "img": "https://d3btuubl2bvm9d.cloudfront.net/images/c88634e73b2511e3b6330e2f866a9102/1466172010005-web.jpg",
+        "description": "ddd"
+    },
+    {
+        "id": 3,
+        "name": "Weeding photography",
+        "price": 399,
+        "img": "https://d3btuubl2bvm9d.cloudfront.net/images/c88634e73b2511e3b6330e2f866a9102/1466172010005-web.jpg",
+        "description": "ddd"
+    }
+]
