@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 import { Link } from 'react-router-dom';
-import logo from '../../../images/logo/logo.png'
+import logo from '../../../images/logo/images.jpg'
 import auth from '../../../Firebase.int'
 import { signOut } from 'firebase/auth';
 
@@ -15,7 +15,7 @@ const handleLogOut = ()=>{
 }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="primary"  variant="dark">
+        <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary"  variant="dark">
   <Container>
   <Navbar.Brand as={Link} to="/">
       <img src={logo} height={40} width={40} alt="" />

@@ -7,8 +7,9 @@ const Service = (props) => {
     const navigate =  useNavigate();
     const {name, id, img,price,description} = props.service;
 
-    const handleToChackOut = (id) => {
+    const handleToChackOut = () => {
         navigate('/chackout')
+        console.log('ff')
     }
 
     return (
@@ -19,7 +20,7 @@ const Service = (props) => {
                 <h5 className="card-title">{name}</h5>
                 <p>Price:${price}</p>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button className='btn btn-primary' onClick={ () => handleToChackOut (id)}>Haire Now</button>
+                        <button className='btn btn-primary' onClick={  handleToChackOut}>Haire Now</button>
                 </div>
         </div>
 
