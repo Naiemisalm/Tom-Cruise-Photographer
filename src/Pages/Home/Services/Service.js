@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -7,9 +7,8 @@ const Service = (props) => {
     const navigate =  useNavigate();
     const {name, id, img,price,description} = props.service;
 
-    const handleToChackOut = () => {
+    const handleToChackOut = () =>{
         navigate('/chackout')
-        console.log('ff')
     }
 
     return (
@@ -19,8 +18,9 @@ const Service = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p>Price:${price}</p>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button className='btn btn-primary' onClick={  handleToChackOut}>Haire Now</button>
+                <p className="card-text">{description}</p>
+            
+                        <button className='btn btn-primary' onClick={ handleToChackOut}>Haire Now</button>
                 </div>
         </div>
 
