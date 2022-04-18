@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import ChackOut from './Pages/ChackOut/ChackOut';
 import About from './Pages/Home/Home/About/About';
 import Blogs from './Pages/Home/Home/Blogs/Blogs';
 import Home from './Pages/Home/Home/Home';
@@ -8,6 +9,7 @@ import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Header from './Pages/Shared/Header/Header';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/chackout' element={<ChackOut></ChackOut>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
     </div>

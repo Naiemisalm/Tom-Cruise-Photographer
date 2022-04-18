@@ -15,7 +15,7 @@ const handleLogOut = ()=>{
 }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="primary"  variant="dark">
   <Container>
   <Navbar.Brand as={Link} to="/">
       <img src={logo} height={40} width={40} alt="" />
@@ -31,10 +31,10 @@ const handleLogOut = ()=>{
       {
 
         user ?
-        <button onClick={handleLogOut}>Log Out</button>
+        <button className='btn btn-dark text-white' onClick={handleLogOut}>Log Out</button>
 
         :
-        <Nav.Link as={Link} to="/login">
+        <Nav.Link className='text-dark fa-bold font-weight-bold' as={Link} to="/login">
         Login
       </Nav.Link>
       }
