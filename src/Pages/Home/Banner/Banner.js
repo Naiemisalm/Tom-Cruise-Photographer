@@ -3,9 +3,9 @@ import './Banner.css'
 import {Link, useNavigate } from 'react-router-dom';
 
 import { Carousel } from 'react-bootstrap';
-import banner from '../../../images/banner/banner.png'
-import banner1 from '../../../images/banner/banner1.png'
-import banner2 from '../../../images/banner/banner2.png'
+import banner from '../../../images/banner/banner.jpg'
+import banner1 from '../../../images/banner/banner1.jpg'
+import banner2 from '../../../images/banner/banner2.jpg'
 
 const Banner = () => {
   const navigate = useNavigate()

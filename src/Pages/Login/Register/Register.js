@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase.int'
+import SocailLogin from '../SocailLogin/SocailLogin';
 
 
 const Register = () => {
@@ -32,6 +33,7 @@ const Register = () => {
 
     return (
         <div>
+            <h3 className='text-center' >Create an account!!</h3>
             <Form onSubmit={handleRegister} className='container w-50 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -50,6 +52,9 @@ const Register = () => {
                 </Button>
             </Form>
             <p className='text-center'>Already have an account <span style={{ cursor: "pointer" }} className='text-danger' onClick={navigateRegister}>Login</span></p>
+            <div>
+                <SocailLogin></SocailLogin>
+            </div>
         </div>
     );
 };

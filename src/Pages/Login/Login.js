@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.int'
+import SocailLogin from './SocailLogin/SocailLogin';
 
 const Login = () => {
     const navigate = useNavigate()
@@ -22,12 +23,13 @@ const Login = () => {
    
     const hadleToLogin = event => {
         event.preventDefault();
-        const email = event.target.value
-        const password = event.target.value
+        const email = event.target.email.value
+        const password = event.target.password.value
+        console.log(email,password)
         signInWithEmailAndPassword(email, password)
 
         if (user) {
-            navigate(from, { replace: true });
+            navigate('/home');
          }
 
     }
@@ -57,7 +59,11 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
-            <p className='text-center'> Don't have an account <span className='text-danger' style={{ cursor: 'pointer' }} onClick={navigateRegister}>Sign Up</span></p>
+            
+        <p className='text-center'> Don't have an account <span className='text-danger' style={{ cursor: 'pointer' }} onClick={navigateRegister}>Sign Up</span></p>
+        <div>
+            <SocailLogin></SocailLogin>
+        </div>
         </div>
     );
 };

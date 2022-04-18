@@ -1,7 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Banner from './Pages/Home/Banner/Banner';
 import About from './Pages/Home/Home/About/About';
 import Blogs from './Pages/Home/Home/Blogs/Blogs';
 import Home from './Pages/Home/Home/Home';
@@ -15,7 +14,6 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Banner></Banner>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
